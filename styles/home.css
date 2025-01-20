@@ -1,0 +1,47 @@
+
+#home {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 91px);
+
+}
+
+#cta {
+    text-align:center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+.tittle {
+    padding-top: 0px;
+    font-size: 3rem;
+    color: rgb(255, 187, 0);
+    text-align: center;
+}
+
+.tittle span {
+    
+    color: rgb(0, 0, 0);
+}
+
+.description {  
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#cta_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #0a0404;
+}

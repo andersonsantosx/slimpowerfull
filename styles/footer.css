@@ -1,0 +1,67 @@
+.slim-power-advantages {
+    background-color: #f4f4f9;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.slim-power-advantages h2 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.slim-power-advantages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.slim-power-advantages ul li {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.slim-power-advantages ul li h3 {
+    font-size: 18px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.slim-power-advantages ul li p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+
+

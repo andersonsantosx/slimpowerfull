@@ -1,0 +1,147 @@
+header {
+    width: 100%;
+    padding: 23px 8%;
+}
+
+body.active{
+    overflow: hidden;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    font-size: 24px;
+    color: #052F5F;
+    margin: 7px 0 0 0;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #052F5F;
+    font-weight: 580;
+}
+
+.nav-item.active a {
+    color: #024086;
+    border-bottom: 2px solid #1E6FB5;    
+}
+
+#mobile_btn {
+    display: none;
+    width: 45px;
+    height: 45px;
+    background: none;
+    border: none;
+    position: relative;
+}
+
+#mobile_btn.active svg{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 11;
+    stroke: #0D2341;
+}
+
+#mobile_btn svg{
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    cursor: pointer;
+    stroke: #052F5F;
+}
+
+#mobile_btn svg path{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s;
+}
+
+#mobile_btn.active svg path:nth-child(1){
+    transform: rotate(45deg) translateY(-6px) translateX(4px);
+}
+#mobile_btn.active svg path:nth-child(2){
+    visibility: hidden;
+    opacity: 0;
+}
+#mobile_btn.active svg path:nth-child(3){
+    transform: rotate(-45deg) translateY(-1px) translateX(-13px);
+}
+
+#mobile_menu {
+    display: none;
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.753); 
+    padding: 20px;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+}
+
+#mobile_menu.active {
+    padding-top: 54%;
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+#mobile_menu ul {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#mobile_menu .nav-item a {
+    color: white;
+    font-size: 29px;
+}
+
+
+#close_btn {
+    position: absolute;
+    top: 0.8%;
+    right: 8%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 52px;
+    cursor: pointer;
+}
+
+#fechar {
+    color: #02ff0f34;
+}
+
+@media screen and (max-width: 768px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+    #mobile_btn {
+        display: block;
+    }
+}
